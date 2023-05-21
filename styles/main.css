@@ -245,7 +245,8 @@ article {
   opacity: 1.5;
   overflow: hidden;
   width: 100%;
-  padding: 20px 0px 42px 1px;
+  padding: 21px 16px 41px 2px;
+  height: 430px;
   background-color: white;
 }
 
