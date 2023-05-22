@@ -12,13 +12,6 @@
       <h1>Benedict's Blog</h1> 
     </header>
     <section>
-      <!-- <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav> !-->
 
       <article>
           <head>
@@ -41,16 +34,36 @@
                 <h2>Technical Blog - CSS Concepts</h2>
                   
                 <h3>What are the best practices associated with using classes vs. ids?</h3>
+
+                <ul>
+                    <p>The two most commonly used CSS selectors are : classes and ids. They are used to find a specific element that we want to style from an HTML file.</p>
+                    <p>Classes use the period/dot <code>'.'</code> character to select a specific element. 
+                    <p>In CSS file: when want to create a custom div element named <i>blog-post</i>, we write <code>div.blog-post</code> or <code>.blogpost.</code></p>
+                    <p>In HTML file: when we want to use our custom div element named <i>blog-post</i>, we write: <code><span><</span>div class="blog-post"></code>.</p>
+                    <p>Classes are the preferred CSS selector when styling multiple elements with a shared characteristic</p>
+                    <p>For example, if we want text with different colours then we can create several classes for each:</p>
+                    
+                    <p><code>text.red { color: red; }</code> and <code><span><</span>text class="red"></code> gives <text style="color: red;">red text</text>.</p>
+                    <p><code>text.green { color: green; }</code> and <code><span><</span>text class="green"></code> gives <text style="color: green;">green text</text>.</p>
+                    <p><code>text.blue { color: blue; }</code> and <code><span><</span>text class="blue"></code> gives <text style="color: blue;">blue text</text>.</p>
+                    
+                    <p>Ids use the hash <code>'#'</code> notation next to a specific element.</p> 
+                    <p>In CSS file: when we want to create a custom div element named <i>nav-bar</i>, we write <code>div#nav-bar</code> or <code>#nav-bar</code>.</p>
+                    <p>In HTML file: we declare an id inside a tag like this: <code><span><</span>div id="nav-bar"></code>.</p>   
+                    <p>Unlike class names which can be used by several elements, an id can only be used by one HTML element.</p>
+                    <p>An example of an id being used to style a div element can be seen below: </p>
+                    
+                    <div>In CSS: <pre>#customText {
+                    background-color: yellow;
+                    color: red;
+                    }
+                    </pre></div>
+                    <p>In HTML: <code><span><</span>text id="customText"></code></p> 
+                    <p>Web View: <text style="background-color: yellow; color: red;">Custom Text</text></p>
+                    
+                    <p>The id of an element is unique within a page, so apart from CSS styling the id can also be used as a selector to select one unique element for things like JavaScript.</p>
                   
-                <h4>18 May 2023</h4>
-    
-                <p>These are two most commonly used CSS selectors: classes and ids. They are used to find a specific element that we want to style from an HTML file.</p>
-                <p>Classes use the period/dot '.' character to select a specific element. Examples: "div.classname" or ".classname".</p>
-                <p>We declare a class inside a tag like this: class="classname".</p>
-    
-                <p>Ids involve using the hash '#' notation next to component's name: "#classname".</p> 
-                <p>We declare an id inside a tag like this: id="style-name".</p>   
-                <p>The id of an element is unique within a page, so apart from CSS styling the id can also be used as a selector to select one unique element for things like JavaScript.</p>
+                </ul>      
               </div>  
             </div>
       </article> 
