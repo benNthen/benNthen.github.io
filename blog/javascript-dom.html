@@ -95,8 +95,10 @@
                 <p>In JavaScript, we can write a function that contains a tag that scans the content of a web-page. This code involves using a DOM to achieve that.
                   We can make this function interactable by adding a button component to the page and initiating this function once a user presses it. </p>
                   
-                <p>For example, we can change the background image of a web-page to give it a night view by writing a CSS code for night-mode, then a JavaScript code with function for toggling to dark-mode using DOM and then adding this into the button component.</p>
-                
+                <p id="change-text">For example, we can change the text colour of this paragraph, to give it a green colour by writing a CSS code for green-text, then a JavaScript code with function for toggling to green and back to black 
+                  that contains the DOM API codee for <code>document.getElementById</code> and <code>classList.toggle()</code> and then adding this into the button component as a click event.</p>
+                <button onclick="myFunction()">Change to Green Text</button>
+
               </div>
       </article> 
     </section>
@@ -113,5 +115,12 @@
         <a href="https://www.instagram.com/bened_tech/"><img src="../images/instag.ico" alt="Instagram""></a>
       </div>
     </footer>
+
+    <script>
+      function myFunction() {
+         const component = document.getElementById("change-text");
+         component.classList.toggle("green-text");
+      }
+    </script>
   </body>
 </html>
