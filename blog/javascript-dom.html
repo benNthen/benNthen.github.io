@@ -1,12 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="your-stylesheet-link-here.css" rel="stylesheet" type="text/css">
-        <title>HTML Template</title>
-    </head>
-    <body>
-        
-    </body>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./../styles/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Prompt:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <title>Benedict's Blog</title>
+  <body>
+    <header>
+      <h1>Benedict's Blog</h1> 
+    </header>
+    <section>
+      <article>
+          <head>
+            <title>Identity, Values and Strengths </title>
+            <meta charset="UTF-8">
+            <link href="../styles/main.css" rel="stylesheet" type="text/css">
+          </head>
+
+          <body>
+              <div class="blog-post">
+                <a href="../index.html">Back to Home</a>
+                <h2>Technical Blog - JavaScript Fundamentals</h2>
+
+                <h3>What are functions in JavaScript</h3>
+                <p>It is a set of statements that performs a task and is the main building block of a JavaScript file. </p>
+                <p>Functions are defined by the following:</p>
+                <ul>
+                  <li>The name of the function. eg: <code>function nameOfTask ()</code></li>
+                  <li>The list of parameters to the function (if any, can be empty as well), enclosed in a parantheses and separated by commas. eg. <code>function nameOf (param1, param2)</code></li>
+                  <li>The statements that define the function, enclosed in curly brackets: 
+                    <blockquote>
+                      <code>
+                        function myFunction (param1, param2) { 
+                          /* Code goes in here */
+                        }
+                      </code>
+                    </blockquote>
+                    </li>
+                </ul>
+
+                <h3>HTML (Hyper Text Markup Language)</h3>
+                  <p>It is the coding language used for <italic>documents</italic> designed to be displayed on the browser. It contains the heading, body and paragraph. </p>
+                  <p>Relationship with JavaScript: everytime a user performs an actvity on the webpage, actions occur (eg.scrolling, clicking)</p>
+                  <p>To make web-pages interactable to the user, we create different types of <italics>events</italics> such as for Keyboard, Mouse and Document.</p>
+                  <p>In order to create events, we must code <italics>Event Handlers</italics> to handle the user and browser actions and verify user input.</p>
+
+                <h3>CSS (Cascading Style Sheet)</h3>
+                  <p>What is it? It is the coding language used that applies presentation (styling, layout, animation) to the web-page. </p>
+                  <p>Relationship with JavaScript: we can create programmes in the form of scripts that instructs the web-page to change its style drammatically. </p>
+                  <p>We can code functions within the programme, that targets certain elements on the HTML file and have them add a new attribute.</p>
+    
+                <h3>Control Flow and Loops</h3>
+
+                <h3>Control Flow</h3>
+                  <p>It is the order in which the computer executes the statements in a script of code. Code normally runs in order from first to the last line unless there are conditionals and loops. </p>
+                  <p>Real Life Example: we are given a recipe to make beef empanadas, so follow the instructions set out in the order they are written. This is similar to a script of code, the computer will follow the order it is written.</p>
+                  <img src="../images/recipe.jpg" alt="Recipe Book" width="220" height="220">
+                  <img src="../images/editor.jpg" alt="Code Editor" width="220" height="220">
+                  <p>Coding Example: When we write code on an editor such as Visual Studio Code, it is normally numbered. Within the computer, is a compiler that goes through each line and then translate late it into the output
+                    that's either seen on the console log or on the web page itself. In a way, we are the programmers instructing the computer to do something.
+                  </p>
+                  
+
+                <h3>Loops</h3>
+                <p>A sequence of instructions that is continually repeated until a certain condition is reached. These instructions normally involve finding an item within a set of data and the conditions involved having a counter reach a certain number of repetitions.</p>
+                <p>Coding Example: most of the applications of loops involves storing a set of data in an array and then filtering them via a loop. Inside a loop are nested conditionals used to filter the desired data necessary.</p>
+                <img src="../images/bakery.jpg" alt="Bakery" width="290" height="190">
+                <img src="../images/timeshift.png" alt="Code Editor" width="220" height="220">
+                <p>Real Life Example: we can use a real-life person who works at place, five days a week and 8 hours a day. For example, a baker
+                  works at a local bakery everyday, making bread and has only 8 hours to do it. The type of bread he makes depends
+                  on the demand of customers and his manager, which is set out similar to conditional statements inside the loop. The baker has a timestamp of his daily shift.
+                  In a way, the baker's working days are like loops, which could end after 8 hours or depending on whether he completes all of 
+                  his tasks much like conditional statements. 
+                </p>
+
+                <h3>Acessing Data from Arrays and Objects</h3>
+
+                <h4>Objects</h4>
+                <p>Definition: in Objects, data is stored in a key-value pair sequence. </p>
+                <p>For example, <code>name : 'Benedict'</code> - name is the key and 'Benedict' is the value. They can be accessed in any order. 
+                  If we want to acessed each object, then we can either use the dot operater<code>(.)</code> followed by the key name <code>obj.name</code> or using a square brack along with a key in string format <code>obj['name']</code> to accessed
+                  the value.</p>
+
+                <h4>Arrays</h4>
+                <p>In Array, data is stored in an ordered sequenence and data can be accessed using a numerical index. </p>
+                <p>An example of an array would be <code>const array = [1 , 2,  3,  4,  5]</code>. To access the number 1, we must type <code>console.log(arr[0])</code>. 
+                  The first element is stored in index 0 while the last element of 5 is at index 4.</p>
+
+                <h3>DOM (Document Object Model)</h3>
+                <p>Definition: It is language interface (in the form of abbreviated code called API) used to access the elements contained on the HTML document. It can be used to connect the HTML document with the JavaScript language.</p>
+                <p>Usage: We can use DOMs in a similar way that we would access an object, through acessing the dot operator<code>(.)</code> </p>
+                <p>In JavaScript, we can write a function that contains a tag that scans the content of a web-page. This code involves using a DOM to achieve that.
+                  We can make this function interactable by adding a button component to the page and initiating this function once a user presses it. </p>
+                  
+                <p>For example, we can change the background image of a web-page to give it a night view by writing a CSS code for night-mode, then a JavaScript code with function for toggling to dark-mode using DOM and then adding this into the button component.</p>
+                
+              </div>
+      </article> 
+    </section>
+
+    <footer>
+      <div class="navbar-foot">
+        <a href="../index.html">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="navbar-foot">
+        <a href="https://www.linkedin.com/feed/"><img src="../images/linkedin.ico" alt="LinkedIn""></a>
+        <a href="https://github.com/benNthen"><img src="../images/giticon.ico" alt="GitHub""></a>
+        <a href="https://www.instagram.com/bened_tech/"><img src="../images/instag.ico" alt="Instagram""></a>
+      </div>
+    </footer>
+  </body>
 </html>
