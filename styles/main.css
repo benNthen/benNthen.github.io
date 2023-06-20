@@ -197,7 +197,8 @@ code {
 
         --navbar-blog-a-padding: 10px 15px;
       
-        --navbar-foot-font-family: 'Prompt', sans-serif;
+        --navbar-foot-font-family:
+        'Prompt', sans-serif;
         --navbar-foot-opacity: 0.89;
         --navbar-foot-margin: 0 auto;
 
@@ -280,8 +281,7 @@ article {
   float: left;
   padding: 0px 10px 10px 9px;
   width: 100%;
-  heigt: 100%;
-  max-height: 786px;
+  max-height: 791px;
   background-color: #71b0df;
   overflow: auto;
 }
@@ -291,7 +291,7 @@ article {
   opacity: 1.5;
   overflow: hidden;
   width: 100%;
-  height: 95px;
+  height: 108px;
   background-color: white;
   text-align: left;
 }
@@ -321,8 +321,8 @@ article {
   overflow: hidden;
   width: 100%;
   padding: 7px 16px 41px 21px;
-  /* height: auto; */
-  /* min-height: 499px; */
+  height: auto;
+  min-height: 498px;
   background-color: white;
 }
 
@@ -354,4 +354,42 @@ footer {
   text-decoration: none;
   font-size: 17px;
   color: white;
+}
+
+/* Well Being Plan Table */
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.image-well {
+  padding-left: 90px;
 }
