@@ -356,6 +356,9 @@ footer {
   color: white;
 }
 
+p.green-text {
+  color: green;
+}
 /* Well Being Plan Table */
 
 .styled-table {
